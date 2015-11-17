@@ -1,0 +1,152 @@
+.launch {
+   position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    border-radius: 50%;
+    background: #51A891;
+    line-height: 5;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    color: #E9D2D2;
+}
+
+div[ng-view] {
+   position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px; 
+    background: rgb(36, 62, 105);
+}
+
+.game-container {
+   position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px; 
+    background: white;
+}
+
+.game-container section {
+    width: 100%;
+    height: 100%;
+}
+.left-container {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.team-a-info, .team-b-info {
+    width: 90%;
+    height: 50px;
+    padding: 5px;
+    background: rgba(45, 105, 36, 0.17);
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    font-size: 20px;
+    color: #151515;
+    box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75) !important;
+}
+
+.team-a-info  input[type="text"], .team-b-info  input[type="text"] {
+    height: 25px;
+    border-radius: 5px;
+    border: none;
+    width: 70%;
+}
+
+.team-a-info button, .team-b-info button {
+    height: 30px;
+    border: none;
+    background: rgba(217, 184, 194, 0.96);
+    border-radius: 50%;
+    width: 30px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px 0px rgb(234, 10, 10) !important;
+    margin-left: 5px;
+}
+
+.team-a-list, .team-b-list {
+    width: 90%;
+    height: 30px;
+    padding: 5px;
+    margin: auto;
+    box-shadow: 0px 0px 1px 0px rgba(50, 50, 50, 0.75) !important;
+    font-size: 20px;
+}
+
+.team-a-list .player-name, .team-b-list .player-name {
+    width: 70%;
+    font-size: 20px;
+    display: inline-block;
+} 
+
+.right-container {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 50px;
+    background:  #51A891;
+}
+
+footer button {
+    height: 30px;
+    background: #E6DBDB;
+    font-size: 17px;
+    border: 1px solid #D6ADAD;
+    width: 30%;
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button[disabled="disabled"] {
+    cursor: default;
+    opacity: 0.5;
+}
+
+.popup-wrapper {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: rgba(0,0,0, 0.5);
+}
+.popup {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 300px;
+    height: 80px;
+    margin: auto;
+    box-shadow: 0px 0px 1px 1px rgba(50, 50, 50, 0.75) !important;
+    background: white;
+}
+.popup div {
+    font-size: 20px;
+    padding: 5px;
+    font-weight: bold;
+}
+.popup button {
+    margin: 5px;
+}

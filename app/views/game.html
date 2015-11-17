@@ -1,0 +1,27 @@
+<div class="game-container" ng-controller="GameCtrl">
+    <section>
+      <div class="left-container">
+        <div class="team-a-info" ng-click="checkLimit(teamA)"><div>Team-A</div><input ng-disabled="teamA.length == 11" type="text" ng-model="playerA" ><button ng-click="addPlayer('A')" ng-disabled="!playerA || teamA.length == 11" title="Add Player">+</button></div>
+          <div class="team-a-list" ng-repeat="player in teamA" >
+            <span class="player-name" ng-bind="player.name"></span>
+            <span ng-bind="player.score"></span>
+          </div>
+      </div>
+      <div class="right-container">
+        <div class="team-b-info" ng-click="checkLimit(teamB)"><div>Team-B</div><input ng-disabled="teamB.length == 11" type="text" ng-model="playerB" ><button ng-click="addPlayer('B')" ng-disabled="!playerB || teamB.length == 11" title="Add Player">+</button></div>
+          <div class="team-b-list" ng-repeat="player in teamB">
+            <span class="player-name" ng-bind="player.name"></span>
+            <span ng-bind="player.score"></span>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <button ng-disabled="teamA.length != 11" ng-click="showTotalScore('A')">Total Score:A</button>
+      <button ng-disabled="teamB.length != 11" ng-click="showTotalScore('B')">Total Score:B</button>
+      <button ng-disabled="teamA.length != 11 || teamB.length != 11" ng-click="showWinner()">Winner</button>
+    </footer>
+    <div class="popup-wrapper" ng-show="showPopup">
+      <div class="popup"><div ng-bind="message"></div> <button ng-click="showPopup=false">Ok</button></div>
+
+    </div>
+</div>
